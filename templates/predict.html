@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>診断結果</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+</head>
+<body>
+    <h1>診断結果</h1>
+    <ul>
+        {% for result in results %}
+            <li>
+                <strong>質問:</strong> {{ result['question'] }}<br>
+                <strong>あなたの回答:</strong> {{ result['selected_answer'] }}<br>
+                    {% if result.get('emotion') %}
+                        <strong>感情解析結果:</strong> {{ result['emotion'] }}
+                    {% endif %}
+                <strong>感情解析結果:</strong> {{ result['emotion'] }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}"><button>ホームに戻る</button></a>
+</div>
+</body>
+</html>

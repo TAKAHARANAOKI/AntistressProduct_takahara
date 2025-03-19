@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ストレス診断アプリ</title>
+    <link rel=stylesheet href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ストレス診断アプリ</h1>
+        <p>いまからストレス診断を行います！</p>
+        <a href="{{ url_for('diagnosis', id=1) }}">
+            <button type="submit">診断開始</button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+    "1": {
+        "input_text": "He is energetic and motivated.",
+        "plutchik_emotions": [
+            {
+                "trust": 0.69
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.0,
+            "neu": 0.34,
+            "pos": 0.66,
+            "compound": 0.71
+        }
+    },
+    "2": {
+        "input_text": "It's a vague sense of anxiety.",
+        "plutchik_emotions": [
+            {
+                "sadness": 0.64
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.44,
+            "neu": 0.56,
+            "pos": 0.0,
+            "compound": -0.27
+        }
+    },
+    "3": {
+        "input_text": "I get worried about the other person's attitude and feel anxious.",
+        "plutchik_emotions": [
+            {
+                "fear": 0.67
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.32,
+            "neu": 0.68,
+            "pos": 0.0,
+            "compound": -0.49
+        }
+    },
+    "4": {
+        "input_text": "I feel anxious about what I'm doing now.",
+        "plutchik_emotions": [
+            {
+                "fear": 0.51
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.22,
+            "neu": 0.78,
+            "pos": 0.0,
+            "compound": -0.25
+        }
+    },
+    "5": {
+        "input_text": "Something was unreasonable and I felt angry.",
+        "plutchik_emotions": [
+            {
+                "sadness": 0.51
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.35,
+            "neu": 0.65,
+            "pos": 0.0,
+            "compound": -0.51
+        }
+    }
+}
