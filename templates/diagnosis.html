@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ストレス診断ページ</title>
+    <title>ストレス診断</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
     <div class="container">
-        <h1>ストレス診断</h1>
+        <h1>ストレス診断中</h1>
         <form action="{{ url_for('diagnosis') }}" method="post">
-            <p>{{ question['question'] }}</p>
+            <p>質問{{ question['id'] }}{{ question['question'] }}</p>
             {% for answer in question['answer'] %}
                 <label>
                 <input type="radio" name="selected_answer" value="{{ answer }}"required> {{ answer }}

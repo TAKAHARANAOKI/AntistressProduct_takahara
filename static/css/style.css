@@ -8,3 +8,12 @@ input, button {
     margin: 10px;
     padding: 8px;
 }
+
+ul {
+    list-style: none;  /* リストのマーカーを非表示にする */
+    padding: 0;        /* デフォルトの余白をなくす */
+}
+
+li {
+    margin: 5px 0;     /* 各項目の間に適度な余白をつける */
+}

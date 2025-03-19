@@ -76,8 +76,19 @@ def find_nearest_recommendation(inverted_coords, recommend_mapping):
 
 """感情データを元にストレス解消法を推薦する"""  
 def recommend_stress_relief(emotion_data):
+    """ 感情データを元にストレス解消法を推薦する """
+    print("Received emotion data:", emotion_data)  # 受け取ったデータを表示
+
     averaged_coords = group_and_average_emotions(emotion_data)
+    print("Averaged coordinates:", averaged_coords)  # 平均化後の座標を表示
+
     inverted_coords = invert_coordinates(averaged_coords)
-    return find_nearest_recommendation(inverted_coords, recommend_mapping)
+    print("Inverted coordinates:", inverted_coords)  # 反転後の座標を表示
+
+    recommendations = find_nearest_recommendation(inverted_coords, recommend_mapping)
+    print("Final Recommendations:", recommendations)  # 最終的な推奨結果を表示
+
+    return recommendations
+    
 
 

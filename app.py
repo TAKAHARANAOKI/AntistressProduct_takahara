@@ -4,6 +4,7 @@ import os
 import random
 from model import analyze_emotions
 from emotion_mapping import extract_emotion_scores, get_emotion_coordinates, save_emotion_coordinates_to_json
+from recommend import recommend_stress_relief
 
 app = Flask(__name__)
 
@@ -51,6 +52,13 @@ def get_random_answer(question, num_answer=4):
     all_answers = question['answer']
     return all_answers if len(all_answers) <= num_answer else random.sample(all_answers, num_answer)
 
+def transform_coordinates_dict(coordinates_dict):
+    transformed_data = {}
+    for quadrant, emotions in coordinates_dict.items():
+        for emotion, coords in emotions.items():
+            transformed_data[emotion] = (coords["x"], coords["y"])  # タプル形式に変換
+
+    return transformed_data
 
 @app.route('/')
 def index():
@@ -149,20 +157,18 @@ def predict():
 
 
     save_emotion_coordinates_to_json(coordinates_dict)
-       
-    print(coordinates_dict)
+   
+    print("最終座標データ:",coordinates_dict)
 
+    transformed_data = transform_coordinates_dict(coordinates_dict)
 
-    results = [
-        {
-            'question': q['question'],
-            'selected_answer': responses.get(str(q['id']), ""),
-            'emotion': emotions.get(str(q['id']), "解析なし"),
-            'coordinates': emotion_coordinates.get(str(q['id']), (0, 0))
-        }
-        for q in diagnosis_data['diagnosis'] if str(q['id']) in responses
-    ]
-    return render_template('predict.html', results=results)
+    recommended_method=recommend_stress_relief(transformed_data)
+
+    # デバッグ用: 推奨されるストレス解消法を確認
+    print("推奨されるストレス解消法:", recommended_method)
+
+    return render_template('predict.html', recommended_method=recommended_method)
+
 
 
 if __name__ == '__main__':

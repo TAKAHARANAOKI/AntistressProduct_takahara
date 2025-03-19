@@ -1,72 +1,72 @@
 {
     "1": {
-        "input_text": "He is energetic and motivated.",
+        "input_text": "I don't feel motivated to do anything.",
         "plutchik_emotions": [
             {
-                "trust": 0.69
+                "sadness": 0.43
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.29,
+            "neu": 0.71,
+            "pos": 0.0,
+            "compound": -0.36
+        }
+    },
+    "2": {
+        "input_text": "I get irritated at the unreasonable things.",
+        "plutchik_emotions": [
+            {
+                "anger": 0.45
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.33,
+            "neu": 0.67,
+            "pos": 0.0,
+            "compound": -0.46
+        }
+    },
+    "3": {
+        "input_text": "It often gets excited with fun topics.",
+        "plutchik_emotions": [
+            {
+                "joy": 0.79
             }
         ],
         "vader_scores": {
             "neg": 0.0,
-            "neu": 0.34,
-            "pos": 0.66,
-            "compound": 0.71
-        }
-    },
-    "2": {
-        "input_text": "It's a vague sense of anxiety.",
-        "plutchik_emotions": [
-            {
-                "sadness": 0.64
-            }
-        ],
-        "vader_scores": {
-            "neg": 0.44,
-            "neu": 0.56,
-            "pos": 0.0,
-            "compound": -0.27
-        }
-    },
-    "3": {
-        "input_text": "I get worried about the other person's attitude and feel anxious.",
-        "plutchik_emotions": [
-            {
-                "fear": 0.67
-            }
-        ],
-        "vader_scores": {
-            "neg": 0.32,
-            "neu": 0.68,
-            "pos": 0.0,
-            "compound": -0.49
+            "neu": 0.47,
+            "pos": 0.53,
+            "compound": 0.69
         }
     },
     "4": {
-        "input_text": "I feel anxious about what I'm doing now.",
+        "input_text": "I'm thinking about what I'm looking forward to.",
         "plutchik_emotions": [
             {
-                "fear": 0.51
+                "anticipation": 0.81
             }
         ],
         "vader_scores": {
-            "neg": 0.22,
-            "neu": 0.78,
+            "neg": 0.0,
+            "neu": 1.0,
             "pos": 0.0,
-            "compound": -0.25
+            "compound": 0.0
         }
     },
     "5": {
-        "input_text": "Something was unreasonable and I felt angry.",
+        "input_text": "I was surprised that something unexpected happened.",
         "plutchik_emotions": [
             {
-                "sadness": 0.51
+                "surprise": 0.72
             }
         ],
         "vader_scores": {
-            "neg": 0.35,
-            "neu": 0.65,
-            "pos": 0.0,
-            "compound": -0.51
+            "neg": 0.0,
+            "neu": 0.76,
+            "pos": 0.24,
+            "compound": 0.23
         }
     }
 }
