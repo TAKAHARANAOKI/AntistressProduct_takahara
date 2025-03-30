@@ -1,51 +1,51 @@
 {
     "1": {
-        "input_text": "I don't feel motivated to do anything.",
+        "input_text": "He is energetic and motivated.",
         "plutchik_emotions": [
             {
-                "sadness": 0.43
-            }
-        ],
-        "vader_scores": {
-            "neg": 0.29,
-            "neu": 0.71,
-            "pos": 0.0,
-            "compound": -0.36
-        }
-    },
-    "2": {
-        "input_text": "I get irritated at the unreasonable things.",
-        "plutchik_emotions": [
-            {
-                "anger": 0.45
-            }
-        ],
-        "vader_scores": {
-            "neg": 0.33,
-            "neu": 0.67,
-            "pos": 0.0,
-            "compound": -0.46
-        }
-    },
-    "3": {
-        "input_text": "It often gets excited with fun topics.",
-        "plutchik_emotions": [
-            {
-                "joy": 0.79
+                "trust": 0.69
             }
         ],
         "vader_scores": {
             "neg": 0.0,
-            "neu": 0.47,
-            "pos": 0.53,
-            "compound": 0.69
+            "neu": 0.34,
+            "pos": 0.66,
+            "compound": 0.71
+        }
+    },
+    "2": {
+        "input_text": "It went better than I expected, and I was surprised.",
+        "plutchik_emotions": [
+            {
+                "surprise": 0.71
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.0,
+            "neu": 0.62,
+            "pos": 0.38,
+            "compound": 0.59
+        }
+    },
+    "3": {
+        "input_text": "We met with someone and became friends.",
+        "plutchik_emotions": [
+            {
+                "trust": 0.64
+            }
+        ],
+        "vader_scores": {
+            "neg": 0.0,
+            "neu": 0.66,
+            "pos": 0.34,
+            "compound": 0.48
         }
     },
     "4": {
-        "input_text": "I'm thinking about what I'm looking forward to.",
+        "input_text": "I don't have time to think about it.",
         "plutchik_emotions": [
             {
-                "anticipation": 0.81
+                "sadness": 0.53
             }
         ],
         "vader_scores": {
@@ -56,17 +56,17 @@
         }
     },
     "5": {
-        "input_text": "I was surprised that something unexpected happened.",
+        "input_text": "Something unexpectedly happy happened.",
         "plutchik_emotions": [
             {
-                "surprise": 0.72
+                "joy": 0.82
             }
         ],
         "vader_scores": {
             "neg": 0.0,
-            "neu": 0.76,
-            "pos": 0.24,
-            "compound": 0.23
+            "neu": 0.45,
+            "pos": 0.55,
+            "compound": 0.57
         }
     }
 }
