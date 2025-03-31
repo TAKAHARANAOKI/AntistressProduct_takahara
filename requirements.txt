@@ -20,3 +20,4 @@ regex==2024.11.6
 PyYAML==6.0.2
 networkx==3.2.1
 Werkzeug==2.2.3  # Flaskのバージョンに合わせてWerkzeugを修正"googletrans==4.0.0-rc1" 
+"googletrans==4.0.0-rc1" 
