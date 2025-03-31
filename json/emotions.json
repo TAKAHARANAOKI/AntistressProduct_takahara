@@ -1,72 +1,72 @@
 {
     "1": {
-        "input_text": "Even small things can get irritated.",
+        "input_text": "I feel somewhat restless and nervous.",
         "plutchik_emotions": [
             {
-                "disgust": 0.66
+                "fear": 0.49
             }
         ],
         "vader_scores": {
-            "neg": 0.38,
-            "neu": 0.62,
+            "neg": 0.48,
+            "neu": 0.52,
             "pos": 0.0,
-            "compound": -0.46
+            "compound": -0.39
         }
     },
     "2": {
-        "input_text": "It's a vague sense of anxiety.",
+        "input_text": "I feel positive that I will try hard again tomorrow.",
         "plutchik_emotions": [
             {
-                "sadness": 0.64
+                "anticipation": 0.62
             }
         ],
         "vader_scores": {
-            "neg": 0.44,
-            "neu": 0.56,
-            "pos": 0.0,
-            "compound": -0.27
+            "neg": 0.11,
+            "neu": 0.61,
+            "pos": 0.28,
+            "compound": 0.49
         }
     },
     "3": {
-        "input_text": "I felt disgusted by the other person's attitude.",
+        "input_text": "I sometimes got confused and confused when I disagree with someone.",
         "plutchik_emotions": [
             {
-                "disgust": 0.54
+                "sadness": 0.57
             }
         ],
         "vader_scores": {
-            "neg": 0.33,
-            "neu": 0.67,
+            "neg": 0.47,
+            "neu": 0.53,
             "pos": 0.0,
-            "compound": -0.53
+            "compound": -0.74
         }
     },
     "4": {
-        "input_text": "I feel anxious about what I'm doing now.",
+        "input_text": "I'm worried about relationships.",
         "plutchik_emotions": [
             {
-                "fear": 0.51
+                "fear": 0.62
             }
         ],
         "vader_scores": {
-            "neg": 0.22,
-            "neu": 0.78,
+            "neg": 0.42,
+            "neu": 0.58,
             "pos": 0.0,
-            "compound": -0.25
+            "compound": -0.3
         }
     },
     "5": {
-        "input_text": "Something unexpectedly happy happened.",
+        "input_text": "I felt trusted by someone helping me.",
         "plutchik_emotions": [
             {
-                "joy": 0.82
+                "trust": 0.83
             }
         ],
         "vader_scores": {
             "neg": 0.0,
-            "neu": 0.45,
-            "pos": 0.55,
-            "compound": 0.57
+            "neu": 0.48,
+            "pos": 0.52,
+            "compound": 0.65
         }
     }
 }
